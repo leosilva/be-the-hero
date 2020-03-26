@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
-import CurrencyInput from 'react-currency-input';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -61,12 +60,12 @@ export default function NewIncident() {
                         onChange={e => setDescription(e.target.value)}
                         ea placeholder="Descrição"
                     />
+
                     <input
                         value={value}
                         onChange={e => setValue(e.target.value)}
                         placeholder="Valor em reais"
                     />
-
 
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
